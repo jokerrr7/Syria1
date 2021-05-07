@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+cd $HOME/DRAGON
+while(true) do
+rm -fr ../.telegram-cli
+screen -S DRAGON -X kill
+screen -S DRAGON ./DRAGON
+done

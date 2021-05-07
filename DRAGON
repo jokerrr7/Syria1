@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+cd $HOME/DRAGON
+token="1764231220:AAFmE4dErciSOxVOBPx4HjaGgj4OcBHLE-c"
+while(true) do
+rm -fr ../.telegram-cli
+if [ ! -f ./tg ]; then
+echo "ٴ≪┉ ┉ ┉ ┉ ┉ siria ┉  ┉ ┉ ┉ ┉≫ٴ ┉ ┉ ┉ ┉ ┉ ┉┉ ┉ ┉ ┉ ┉ ┉ ┉"
+echo "TG IS NOT FIND IN FILES BOT"
+echo "ٴ≪┉ ┉ ┉ ┉ ┉ siria ┉  ┉ ┉ ┉ ┉≫ٴ ٴ≪┉ ┉ ┉ ┉ ┉ siria ┉  ┉ ┉ ┉ ┉≫ٴ ┉"
+exit 1
+fi
+if [ ! $token ]; then
+echo "ٴ≪┉ ┉ ┉ ┉ ┉ siria ┉  ┉ ┉ ┉ ┉≫ٴ ٴ≪┉ ┉ ┉ ┉ ┉ siria ┉  ┉ ┉ ┉ ┉≫ٴ ┉ ┉"
+echo -e "\e[1;36mTOKEN IS NOT FIND IN FILE INFO.LUA \e[0m"
+echo "ٴ≪┉ ┉ ┉ ┉ ┉ siria ┉  ┉ ┉ ┉ ┉≫ٴ ┉ ┉ ┉ ┉┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉┉ ┉"
+exit 1
+fi
+echo -e "\033[38;5;208m"
+echo -e "                                                  "
+echo -e "\033[0;00m"
+echo -e "\e[36m"
+./tg -s ./DRAGON.lua -p PROFILE --bot=$token
+done
